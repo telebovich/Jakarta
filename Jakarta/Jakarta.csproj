@@ -84,6 +84,26 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="Content\foundation.css" />
+    <Content Include="Scripts\custom.modernizr.js" />
+    <Content Include="Scripts\foundation.abide.js" />
+    <Content Include="Scripts\foundation.alerts.js" />
+    <Content Include="Scripts\foundation.clearing.js" />
+    <Content Include="Scripts\foundation.cookie.js" />
+    <Content Include="Scripts\foundation.dropdown.js" />
+    <Content Include="Scripts\foundation.forms.js" />
+    <Content Include="Scripts\foundation.interchange.js" />
+    <Content Include="Scripts\foundation.joyride.js" />
+    <Content Include="Scripts\foundation.js" />
+    <Content Include="Scripts\foundation.magellan.js" />
+    <Content Include="Scripts\foundation.orbit.js" />
+    <Content Include="Scripts\foundation.placeholder.js" />
+    <Content Include="Scripts\foundation.reveal.js" />
+    <Content Include="Scripts\foundation.section.js" />
+    <Content Include="Scripts\foundation.tooltips.js" />
+    <Content Include="Scripts\foundation.topbar.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\zepto.js" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
