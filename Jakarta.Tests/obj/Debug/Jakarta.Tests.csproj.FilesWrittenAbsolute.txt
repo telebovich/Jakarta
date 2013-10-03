@@ -1,0 +1,14 @@
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/Jakarta.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/Jakarta.dll.mdb
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/Jakarta.Tests.dll.mdb
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/Jakarta.Tests.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/obj/Debug/Jakarta.Tests.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/obj/Debug/Jakarta.Tests.dll.mdb
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/Microsoft.Web.Infrastructure.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.Razor.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.Helpers.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.WebPages.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.WebPages.Deployment.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.WebPages.Razor.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.Mvc.dll

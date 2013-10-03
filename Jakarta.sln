@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jakarta", "Jakarta\Jakarta.csproj", "{8AFA2D7F-2C2E-4150-9D62-40C6B251F82B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jakarta.Tests", "Jakarta.Tests\Jakarta.Tests.csproj", "{DE22D10E-EEA9-438F-A576-7625A1526DAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AFA2D7F-2C2E-4150-9D62-40C6B251F82B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFA2D7F-2C2E-4150-9D62-40C6B251F82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFA2D7F-2C2E-4150-9D62-40C6B251F82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFA2D7F-2C2E-4150-9D62-40C6B251F82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE22D10E-EEA9-438F-A576-7625A1526DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE22D10E-EEA9-438F-A576-7625A1526DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE22D10E-EEA9-438F-A576-7625A1526DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE22D10E-EEA9-438F-A576-7625A1526DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Jakarta\Jakarta.csproj
+	EndGlobalSection
+EndGlobal
