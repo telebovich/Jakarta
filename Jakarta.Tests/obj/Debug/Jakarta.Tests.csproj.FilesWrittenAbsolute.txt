@@ -12,3 +12,4 @@
 /home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.WebPages.Deployment.dll
 /home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.WebPages.Razor.dll
 /home/telebovich/Projects/Jakarta/Jakarta.Tests/bin/Debug/System.Web.Mvc.dll
+/home/telebovich/Projects/Jakarta/Jakarta.Tests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs

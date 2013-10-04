@@ -2,9 +2,23 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
+	<link href="@Url.Content("~/Content/normalize.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/foundation.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
+	<ul>
+		<li>Page 1</li>
+		<li>Page 2</li>
+		<li>
+			<a href="@Url.Action("Index", "Blog")">
+				<span>Blog</span>
+			</a>
+		</li>
+		<li>Page 4</li> 
+	</ul>
+	<p>Hello World!</p>
 	@RenderBody()
+	<p>Good bye!</p>
 </body>
 </html>
 
