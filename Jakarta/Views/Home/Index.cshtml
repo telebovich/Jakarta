@@ -1,9 +1,15 @@
 @model System.Collections.Generic.List<Jakarta.Models.PostPreview>
 
-<h2>@ViewData["Message"]</h2>
-@foreach (var p in Model)
-{
-	<h2>@p.Title</h2>
-	<p>@p.Copy</p>
-	<p>@p.CreationDate</p>
-}
+@* <h2>@ViewData["Message"]</h2> *@
+		@foreach (var p in Model)
+		{
+			<div class="row">
+			<div class="large-9 columns">
+			<p><b>@p.Title</b></p>
+			<p>@p.Copy</p>		
+			</div>
+			<div class="large-3 columns">
+				<p>@p.CreationDate.ToLongDateString()</p>
+			</div> 
+			</div>
+		}
