@@ -1,2 +1,9 @@
-<h2>@ViewData["Message"]</h2>
+@model System.Collections.Generic.List<Jakarta.Models.PostPreview>
 
+<h2>@ViewData["Message"]</h2>
+@foreach (var p in Model)
+{
+	<h2>@p.Title</h2>
+	<p>@p.Copy</p>
+	<p>@p.CreationDate</p>
+}

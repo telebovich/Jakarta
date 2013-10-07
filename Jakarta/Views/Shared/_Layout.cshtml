@@ -6,16 +6,32 @@
 	<link href="@Url.Content("~/Content/foundation.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<ul>
-		<li>Page 1</li>
-		<li>Page 2</li>
-		<li>
-			<a href="@Url.Action("Index", "Blog")">
-				<span>Blog</span>
-			</a>
-		</li>
-		<li>Page 4</li> 
-	</ul>
+	<div class="row">
+		<div class="small-12 large-centered columns">
+			<nav class="top-bar">
+  				<ul class="title-area">
+    			<!-- Title Area -->
+    			<li class="name">
+      				<h1><a href="#">robertLEBOVICH</a></h1>
+    			</li>
+    			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  				</ul>
+
+  				<section class="top-bar-section">
+    			<!-- Left Nav Section -->
+    			<ul class="right">
+      				<li class="divider"></li>
+      				<li class="active"><a href="#">About</a></li>
+      				<li class="divider"></li>
+      				<li class="active"><a href="#">Contacts</a></li>
+      				<li class="divider"></li>
+      				<li class="active"><a href="#">Portfolio</a></li>
+      			</ul>
+				</section>
+</nav>
+		</div>
+	</div>
 	<p>Hello World!</p>
 	@RenderBody()
 	<p>Good bye!</p>
