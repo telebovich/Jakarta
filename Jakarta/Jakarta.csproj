@@ -63,12 +63,19 @@
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
     <Folder Include="Views\Blog\" />
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -77,6 +84,10 @@
     </Compile>
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Models\PostPreview.cs" />
+    <Compile Include="Modules\CoreModule.cs" />
+    <Compile Include="Services\BlogService.cs" />
+    <Compile Include="Services\IBlogService.cs" />
+    <Compile Include="Repositories\BlogPostPreviewRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -109,6 +120,9 @@
     <Content Include="Scripts\zepto.js" />
     <Content Include="Content\normalize.css" />
     <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Content\accessibility_foundicons.css" />
+    <Content Include="Content\social_foundicons.css" />
+    <Content Include="Content\custom.css" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -119,4 +133,14 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <None Include="Content\fonts\accessibility_foundicons.eot" />
+    <None Include="Content\fonts\accessibility_foundicons.svg" />
+    <None Include="Content\fonts\accessibility_foundicons.ttf" />
+    <None Include="Content\fonts\accessibility_foundicons.woff" />
+    <None Include="Content\fonts\social_foundicons.eot" />
+    <None Include="Content\fonts\social_foundicons.svg" />
+    <None Include="Content\fonts\social_foundicons.ttf" />
+    <None Include="Content\fonts\social_foundicons.woff" />
+  </ItemGroup>
 </Project>

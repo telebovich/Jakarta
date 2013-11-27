@@ -8,10 +8,16 @@ namespace Jakarta.Controllers
 {
     public class BlogController : Controller
     {
-        public ActionResult Index()
-        {
-			ViewData ["Message"] = "Welcome to Blog!";
-            return View ();
-        }
+		// public ActionResult Index()
+		// {
+		// 	ViewData ["Message"] = "Welcome to Blog!";
+		//  return View ();
+		// }
+
+		public ActionResult Index(int id)
+		{
+			ViewData ["Message"] = string.Format ("Welcome to {0} Blog!", id);
+			return View ();
+		}
     }
 }

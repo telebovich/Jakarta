@@ -3,13 +3,18 @@
 @* <h2>@ViewData["Message"]</h2> *@
 		@foreach (var p in Model)
 		{
+			<article>
 			<div class="row">
 			<div class="large-9 columns">
-			<p><b>@p.Title</b></p>
+
+			<h3>
+				@Html.ActionLink(p.Title, "Index", "Blog", new { id = p.Id }, new { @class= "nocolor" })
+			</h3>
 			<p>@p.Copy</p>		
 			</div>
 			<div class="large-3 columns">
 				<p>@p.CreationDate.ToLongDateString()</p>
 			</div> 
 			</div>
+			</article>
 		}

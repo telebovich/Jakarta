@@ -30,6 +30,8 @@ namespace Jakarta.Tests
 		public void IndexShouldReturnAtLeastOneNews()
 		{
 			PostPreview postPreview = new PostPreview ();
+			Assert.IsInstanceOfType(typeof(int), postPreview.Id);
+			Assert.IsNotNull (postPreview.Id);
 			Assert.AreEqual ("This is my first post", postPreview.Title);
 			Assert.AreEqual (DateTime.Today, postPreview.CreationDate);
 			Assert.AreEqual ("This is my first post's copy?", postPreview.Copy);
@@ -38,7 +40,9 @@ namespace Jakarta.Tests
 		[Test]
 		public void ShouldBeAbleToAddCustomNews()
 		{
-			PostPreview postPreview = new PostPreview ("This is my custom post", DateTime.Today, "This is my custom post's copy?");
+			PostPreview postPreview = new PostPreview (1, "This is my custom post", DateTime.Today, "This is my custom post's copy?");
+			Assert.IsInstanceOfType(typeof(int), postPreview.Id);
+			Assert.IsNotNull (postPreview.Id);
 			Assert.AreEqual ("This is my custom post", postPreview.Title);
 			Assert.AreEqual (DateTime.Today, postPreview.CreationDate);
 			Assert.AreEqual ("This is my custom post's copy?", postPreview.Copy);
