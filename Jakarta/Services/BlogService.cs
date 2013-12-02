@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Jakarta.Models;
 
 namespace Jakarta
@@ -15,6 +16,11 @@ namespace Jakarta
 		public PostPreview GetBlogPostPreview(int blogPostPreviewId)
 		{
 			return _blogPostPreviewRepository.GetBlogPostPreview(blogPostPreviewId);
+		}
+
+		public List<PostPreview> GetAllBlogPosts()
+		{
+			return _blogPostPreviewRepository.GetAllBlogPosts ();
 		}
 	}
 }
