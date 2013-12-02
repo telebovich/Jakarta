@@ -13,11 +13,18 @@ namespace Jakarta.Tests
 	[TestFixture ()]
 	public class HomeControllerTest
 	{
+		private HomeController controller;
+		[SetUp]
+		public void Setup()
+		{
+			controller = new HomeController ();
+		}
+
 		[Test ()]
 		public void Index ()
 		{
 			// Arrange
-			HomeController controller = new HomeController ();
+			// HomeController controller = new HomeController ();
 
 			// Act
 			ViewResult result = controller.Index () as ViewResult;
@@ -27,25 +34,10 @@ namespace Jakarta.Tests
 		}
 
 		[Test]
-		public void IndexShouldReturnAtLeastOneNews()
+		public void IndexShouldReturnTypeOfListOfPostPreview()
 		{
-			PostPreview postPreview = new PostPreview ();
-			Assert.IsInstanceOfType(typeof(int), postPreview.Id);
-			Assert.IsNotNull (postPreview.Id);
-			Assert.AreEqual ("This is my first post", postPreview.Title);
-			Assert.AreEqual (DateTime.Today, postPreview.CreationDate);
-			Assert.AreEqual ("This is my first post's copy?", postPreview.Copy);
-		}
-
-		[Test]
-		public void ShouldBeAbleToAddCustomNews()
-		{
-			PostPreview postPreview = new PostPreview (1, "This is my custom post", DateTime.Today, "This is my custom post's copy?");
-			Assert.IsInstanceOfType(typeof(int), postPreview.Id);
-			Assert.IsNotNull (postPreview.Id);
-			Assert.AreEqual ("This is my custom post", postPreview.Title);
-			Assert.AreEqual (DateTime.Today, postPreview.CreationDate);
-			Assert.AreEqual ("This is my custom post's copy?", postPreview.Copy);
+			ViewResult result = controller.Index () as ViewResult;
+			Assert.IsInstanceOf (typeof(List<PostPreview>), result.Model);
 		}
 	}
 }
