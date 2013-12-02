@@ -7,6 +7,7 @@ namespace Jakarta.Tests
 	[TestFixture]
 	public class BlogServiceTest
 	{
+		[Test]
 		public void ShouldBeAbleToGetBlogServiceFromNinject()
 		{
 			BlogService actual;

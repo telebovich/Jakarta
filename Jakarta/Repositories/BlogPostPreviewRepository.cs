@@ -11,7 +11,9 @@ namespace Jakarta
 
 		public PostPreview GetBlogPostPreview(int blogPostPreviewId)
 		{
-			return _blogPostPreviewList.Where (bp => bp.Id == blogPostPreviewId);
+			return _blogPostPreviewList
+					.Where (bp => bp.Id == blogPostPreviewId)
+					.FirstOrDefault ();
 		}
 
 		public BlogPostPreviewRepository()
