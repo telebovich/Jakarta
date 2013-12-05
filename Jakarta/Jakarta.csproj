@@ -92,6 +92,12 @@
     <Compile Include="Services\IBlogService.cs" />
     <Compile Include="Repositories\BlogPostPreviewRepository.cs" />
     <Compile Include="Repositories\IBlogPostPreviewRepository.cs" />
+    <Compile Include="Models\BlogPost.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\BlogPostRepository.cs" />
+    <Compile Include="Repositories\IBlogPostRepository.cs" />
+    <Compile Include="Services\IBlogPostService.cs" />
+    <Compile Include="Services\BlogPostService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

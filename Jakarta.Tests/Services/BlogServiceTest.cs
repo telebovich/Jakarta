@@ -19,7 +19,7 @@ namespace Jakarta.Tests
 		}
 
 		[Test]
-		public void ShouldBeAbleToCallBlogPostServiceAndGetBlogPost()
+		public void ShouldBeAbleToCallBlogPostPreviewServiceAndGetBlogPost()
 		{
 			var expected = new PostPreview { Id = 1, Title = "A Blog Post", 
 				CreationDate = DateTime.Today, Copy = "This is a blog post" };

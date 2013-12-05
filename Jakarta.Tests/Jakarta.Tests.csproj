@@ -81,6 +81,7 @@
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\BlogControllerTest.cs" />
     <Compile Include="Services\BlogServiceTest.cs" />
+    <Compile Include="Services\BlogPostService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
