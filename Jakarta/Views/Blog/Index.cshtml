@@ -1,7 +1,16 @@
-﻿<div class="row">
+﻿@model Jakarta.Models.BlogPost
+
+@{
+	ViewBag.Title = Model.Title + " - Robert Lebovich";
+}
+
+<div class="row">
+	A place for responsive image
+</div>
+<div class="row">
 	<article>
-		<h2>
-			@ViewData["Message"]
-		</h2>
+		<h2>@Model.Title</h2>
+				This is date the post is created
+		<p>Here should be some strange text nobody understand</p>
 	</article>
 </div>
