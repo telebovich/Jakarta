@@ -8,9 +8,18 @@
 	A place for responsive image
 </div>
 <div class="row">
-	<article>
+	<!-- article -->
+	<div class="large-9 columns" style="border-right: thick solid grey;">
 		<h2>@Model.Title</h2>
-				This is date the post is created
-		<p>Here should be some strange text nobody understand</p>
-	</article>
+	</div>
+	<div class="large-3 columns">
+		<p style="font-size: 24px;">@Model.CreationDate.ToLongDateString()</p>
+	</div>
+	<!-- /article -->
+</div>
+<div class="row">
+	<p style="font-style: italic;">@Model.Copy</p>
+</div>
+<div class="row">
+	<p>@Model.Content</p>
 </div>
