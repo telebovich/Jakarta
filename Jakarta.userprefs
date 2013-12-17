@@ -1,15 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 3.2.3 (master/714efcf)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Jakarta/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ActiveRuntime="Mono 3.2.7 (master/32861b7)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Jakarta/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Jakarta/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Jakarta/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="Jakarta/Controllers/BlogController.cs" Line="1" Column="1" />
       <File FileName="Jakarta/Views/Blog/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Jakarta.Tests/Controllers/HomeControllerTest.cs" Line="41" Column="94" />
-      <File FileName="Jakarta/Controllers/HomeController.cs" Line="20" Column="33" />
-      <File FileName="Jakarta/Models/PostPreview.cs" Line="22" Column="16" />
-      <File FileName="Jakarta/Views/Home/Index.cshtml" Line="8" Column="6" />
+      <File FileName="Jakarta/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Jakarta/Views/Shared/_Layout.cshtml" Line="15" Column="81" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
