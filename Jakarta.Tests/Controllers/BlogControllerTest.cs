@@ -19,7 +19,7 @@ namespace Jakarta.Tests
 		// }
 
 		public Object _model;
-		public BlogPost _exptected;
+		public Jakarta.Models.BlogPost _exptected;
 		// public Mock<IBlogPostRepository> _blogPostRepository;
 		[SetUp]
 		public void Setup()
