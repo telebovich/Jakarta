@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Moq;
 using Jakarta.Models;
+using Jakarta.ViewModels;
 
 namespace Jakarta.Controllers
 {
@@ -16,10 +17,11 @@ namespace Jakarta.Controllers
 		//  return View ();
 		// }
 
-		public ActionResult Index(int id)
+		public ActionResult Index()
 		{
-			var blogPostRepositoryMock = new Mock<IBlogPostRepository>();
-			blogPostRepositoryMock.Setup (bp => bp.GetById (1)).Returns (new BlogPost {
+			var blogMainPage = new BlogMainPage ();
+			//var blogPostRepositoryMock = new Mock<IBlogPostRepository>();
+			/*blogPostRepositoryMock.Setup (bp => bp.GetById (1)).Returns (new BlogPost {
 				Id = 1,
 				Title = "Welcome to mocked blog!",
 				CreationDate = DateTime.Today,
@@ -28,11 +30,11 @@ namespace Jakarta.Controllers
 				LikesCount = 4,
 				HeaderImageUrl = null
 			});
-
-			var blogPostService = new BlogPostService (blogPostRepositoryMock.Object);
+			*/	
+			// var blogPostService = new BlogPostService (blogPostRepositoryMock.Object);
 
 			// ViewData ["Message"] = string.Format ("Welcome to {0} Blog!", id);
-			return View (blogPostService.GetById(1));
+			return View (blogMainPage);
 		}
     }
 }

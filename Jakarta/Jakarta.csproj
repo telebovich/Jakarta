@@ -79,6 +79,7 @@
     <Folder Include="Modules\" />
     <Folder Include="Services\" />
     <Folder Include="Repositories\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -86,7 +87,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Controllers\BlogController.cs" />
-    <Compile Include="Models\PostPreview.cs" />
     <Compile Include="Modules\CoreModule.cs" />
     <Compile Include="Services\BlogService.cs" />
     <Compile Include="Services\IBlogService.cs" />
@@ -98,6 +98,8 @@
     <Compile Include="Repositories\IBlogPostRepository.cs" />
     <Compile Include="Services\IBlogPostService.cs" />
     <Compile Include="Services\BlogPostService.cs" />
+    <Compile Include="ViewModels\BlogMainPage.cs" />
+    <Compile Include="Models\MostReadItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -109,25 +111,7 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Content\foundation.css" />
-    <Content Include="Scripts\custom.modernizr.js" />
-    <Content Include="Scripts\foundation.abide.js" />
-    <Content Include="Scripts\foundation.alerts.js" />
-    <Content Include="Scripts\foundation.clearing.js" />
-    <Content Include="Scripts\foundation.cookie.js" />
-    <Content Include="Scripts\foundation.dropdown.js" />
-    <Content Include="Scripts\foundation.forms.js" />
-    <Content Include="Scripts\foundation.interchange.js" />
-    <Content Include="Scripts\foundation.joyride.js" />
-    <Content Include="Scripts\foundation.js" />
-    <Content Include="Scripts\foundation.magellan.js" />
-    <Content Include="Scripts\foundation.orbit.js" />
-    <Content Include="Scripts\foundation.placeholder.js" />
-    <Content Include="Scripts\foundation.reveal.js" />
-    <Content Include="Scripts\foundation.section.js" />
-    <Content Include="Scripts\foundation.tooltips.js" />
-    <Content Include="Scripts\foundation.topbar.js" />
     <Content Include="Scripts\jquery.js" />
-    <Content Include="Scripts\zepto.js" />
     <Content Include="Content\normalize.css" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Content\accessibility_foundicons.css" />

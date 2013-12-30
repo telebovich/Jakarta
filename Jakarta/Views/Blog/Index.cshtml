@@ -1,25 +1,37 @@
-﻿@model Jakarta.Models.BlogPost
+﻿@model Jakarta.ViewModels.BlogMainPage
 
 @{
-	ViewBag.Title = Model.Title + " - Robert Lebovich";
+	ViewBag.Title = "Blog" + " - Robert Lebovich";
 }
 
-<div class="row">
-	A place for responsive image
-</div>
-<div class="row">
-	<!-- article -->
-	<div class="large-9 columns" style="border-right: thick solid grey;">
-		<h2>@Model.Title</h2>
+<header>
+	<div class="row">
+		<h1>Most Read</h1>
+		@{
+			foreach(var item in Model.MostReadItems)
+			{
+				<article class="medium-4 columns featured_post">
+					<h3>@item.Title</h3>
+					<img src="@Url.Content(item.Image)" alt="attent" style="width:100%;" />
+					<p>
+						@item.Copy
+					</p>
+					<div class="post_meta">
+						<span class="lsf-icon" title="calendar">
+							@item.PublishDate.ToShortDateString()
+						</span>
+						<span class="lsf-icon" title="user" style="margin-left:15px;">
+							<a href="#">@item.Author</a>
+						</span>
+						<span class="lsf-icon" title="comment" style="margin-left:15px;">
+							<a href="#">@item.CommentsCount</a>
+						</span>
+					</div>
+				</article>
+			}
+		}
 	</div>
-	<div class="large-3 columns">
-		<p style="font-size: 24px;">@Model.CreationDate.ToLongDateString()</p>
-	</div>
-	<!-- /article -->
-</div>
-<div class="row">
-	<p style="font-style: italic;">@Model.Copy</p>
-</div>
-<div class="row">
-	<p>@Model.Content</p>
-</div>
+</header>
+<script type="text/javascript">
+	$("#blog").attr("class", "active");
+</script>

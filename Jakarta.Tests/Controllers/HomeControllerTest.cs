@@ -32,12 +32,5 @@ namespace Jakarta.Tests
 			// Assert
 			Assert.AreEqual ("Welcome to ASP.NET MVC on Mono!", result.ViewData ["Message"]);
 		}
-
-		[Test]
-		public void IndexShouldReturnTypeOfListOfPostPreview()
-		{
-			ViewResult result = controller.Index () as ViewResult;
-			Assert.IsInstanceOf (typeof(List<PostPreview>), result.Model);
-		}
 	}
 }

@@ -21,14 +21,14 @@ namespace Jakarta.Tests
 		[Test]
 		public void ShouldBeAbleToCallBlogPostPreviewServiceAndGetBlogPost()
 		{
-			var expected = new PostPreview { Id = 1, Title = "A Blog Post", 
-				CreationDate = DateTime.Today, Copy = "This is a blog post" };
+			var expected = new MostReadItem { Id = 1, Title = "A Blog Post", 
+				PublishDate = DateTime.Today, Copy = "This is a blog post" };
 			var blogPostPreviewRepositoryMock = 
 				new Mock<IBlogPostPreviewRepository> ();
 			blogPostPreviewRepositoryMock
 				.Setup (bp => bp.GetBlogPostPreview (1))
-				.Returns (new PostPreview { Id = 1, Title = "A Blog Post", 
-				CreationDate = DateTime.Today, Copy = "This is a blog post"
+				.Returns (new MostReadItem { Id = 1, Title = "A Blog Post", 
+					PublishDate = DateTime.Today, Copy = "This is a blog post"
 			});
 			var blogPostPreviewService = 
 				new BlogService (blogPostPreviewRepositoryMock.Object);
@@ -36,7 +36,7 @@ namespace Jakarta.Tests
 
 			Assert.AreEqual (expected.Id, actual.Id);
 			Assert.AreEqual (expected.Title, actual.Title);
-			Assert.AreEqual (expected.CreationDate, actual.CreationDate);
+			Assert.AreEqual (expected.PublishDate, actual.PublishDate);
 			Assert.AreEqual (expected.Copy, actual.Copy);
 		}
 	}

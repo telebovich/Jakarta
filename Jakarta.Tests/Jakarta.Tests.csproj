@@ -82,6 +82,7 @@
     <Compile Include="Controllers\BlogControllerTest.cs" />
     <Compile Include="Services\BlogServiceTest.cs" />
     <Compile Include="Services\BlogPostService.cs" />
+    <Compile Include="ViewModels\BlogMainPageTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -89,5 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>
