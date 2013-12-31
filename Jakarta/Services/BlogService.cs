@@ -13,12 +13,12 @@ namespace Jakarta
 			_blogPostPreviewRepository = blogPostPreviewRepository;
 		}
 
-		public MostReadItem GetBlogPostPreview(int blogPostPreviewId)
+		public BlogPostPreviewItem GetBlogPostPreview(int blogPostPreviewId)
 		{
 			return _blogPostPreviewRepository.GetBlogPostPreview(blogPostPreviewId);
 		}
 
-		public List<MostReadItem> GetAllBlogPosts()
+		public List<BlogPostPreviewItem> GetAllBlogPosts()
 		{
 			return _blogPostPreviewRepository.GetAllBlogPosts ();
 		}

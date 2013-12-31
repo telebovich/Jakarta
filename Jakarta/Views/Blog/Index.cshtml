@@ -32,6 +32,48 @@
 		}
 	</div>
 </header>
+<section>
+	<div class="section_main">
+		<div class="row">
+			<section class="large-8 columns">
+				<h2>Latest</h2>
+				@{
+					foreach(var item in Model.LatestItems)
+					{
+						<article class="blog_post">
+							<div class="medium-3 columns">
+								<a href="#" class="th">
+									<img src="@Url.Content(item.Image)" alt="thumb" />
+								</a> 
+							</div>
+							<div class="medium-9 columns">
+								<a href="#">
+									<h3>@item.Title</h3>
+								</a>
+								<p>
+									@item.Copy
+								</p>
+							</div>
+						</article>
+					}
+				}
+			</section>
+			<section class="small-4 columns">
+				<h2>Sidebar</h2>
+				<div class="panel">
+					<h3>Heading</h3>
+					<p>
+						Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. 
+						Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque 
+						penatibus. Vivamus tortor tellus, rutrum sit amet mollis vel.
+					</p>
+					<h3>Accordion Panel</h3>
+
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
 <script type="text/javascript">
 	$("#blog").attr("class", "active");
 </script>

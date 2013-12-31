@@ -6,8 +6,8 @@ namespace Jakarta
 {
 	public interface IBlogPostPreviewRepository: IRepository 
 	{
-		MostReadItem GetBlogPostPreview(int blogPostPreviewId);
-		List<MostReadItem> GetAllBlogPosts();
+		BlogPostPreviewItem GetBlogPostPreview(int blogPostPreviewId);
+		List<BlogPostPreviewItem> GetAllBlogPosts();
 	}
 }
 

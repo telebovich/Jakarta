@@ -21,13 +21,13 @@ namespace Jakarta.Tests
 		[Test]
 		public void ShouldBeAbleToCallBlogPostPreviewServiceAndGetBlogPost()
 		{
-			var expected = new MostReadItem { Id = 1, Title = "A Blog Post", 
+			var expected = new BlogPostPreviewItem { Id = 1, Title = "A Blog Post", 
 				PublishDate = DateTime.Today, Copy = "This is a blog post" };
 			var blogPostPreviewRepositoryMock = 
 				new Mock<IBlogPostPreviewRepository> ();
 			blogPostPreviewRepositoryMock
 				.Setup (bp => bp.GetBlogPostPreview (1))
-				.Returns (new MostReadItem { Id = 1, Title = "A Blog Post", 
+				.Returns (new BlogPostPreviewItem { Id = 1, Title = "A Blog Post", 
 					PublishDate = DateTime.Today, Copy = "This is a blog post"
 			});
 			var blogPostPreviewService = 

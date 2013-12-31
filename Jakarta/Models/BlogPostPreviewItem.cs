@@ -2,7 +2,7 @@ using System;
 
 namespace Jakarta.Models
 {
-	public class MostReadItem
+	public class BlogPostPreviewItem
 	{
 		public int Id { get; set; }
 		public string Title { get; set; }

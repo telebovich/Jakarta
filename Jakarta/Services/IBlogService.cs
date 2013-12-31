@@ -6,8 +6,8 @@ namespace Jakarta
 {
 	public interface IBlogService
 	{
-		PostPreview GetBlogPostPreview(int blogPostPreviewId);
-		List<PostPreview> GetAllBlogPosts();
+		BlogPostPreviewItem GetBlogPostPreview(int blogPostPreviewId);
+		List<BlogPostPreviewItem> GetAllBlogPosts();
 	}
 }
 

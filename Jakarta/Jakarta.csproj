@@ -99,7 +99,7 @@
     <Compile Include="Services\IBlogPostService.cs" />
     <Compile Include="Services\BlogPostService.cs" />
     <Compile Include="ViewModels\BlogMainPage.cs" />
-    <Compile Include="Models\MostReadItem.cs" />
+    <Compile Include="Models\BlogPostPreviewItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
