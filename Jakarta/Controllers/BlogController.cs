@@ -11,6 +11,7 @@ namespace Jakarta.Controllers
 {
     public class BlogController : Controller
     {
+		public BlogPostRepository repository = new BlogPostRepository();
 		// public ActionResult Index()
 		// {
 		// 	ViewData ["Message"] = "Welcome to Blog!";
@@ -35,6 +36,17 @@ namespace Jakarta.Controllers
 
 			// ViewData ["Message"] = string.Format ("Welcome to {0} Blog!", id);
 			return View (blogMainPage);
+		}
+
+		public ActionResult CoolStuff ()
+		{
+			return PartialView ();
+		}
+
+		public ActionResult Read (int id)
+		{ 
+			var blogPost = repository.GetById (id);
+			return View (blogPost);
 		}
     }
 }

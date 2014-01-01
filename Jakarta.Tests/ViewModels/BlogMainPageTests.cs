@@ -36,6 +36,18 @@ namespace Jakarta.Tests
 		{
 			Assert.AreEqual (3, blogMainPage.LatestItems.Count);
 		}
+
+		[Test]
+		public void ShouldReturnAccordeonPanelItemObjec()
+		{
+			Assert.IsNotNull (blogMainPage.AccordeonPanelItems);
+		}
+
+		[Test]
+		public void ShouldReturnThreeAccordeonPanelItem()
+		{
+			Assert.AreEqual (3, blogMainPage.AccordeonPanelItems.Count);
+		}
 	}
 }
 
