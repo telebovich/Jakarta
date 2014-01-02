@@ -4,6 +4,14 @@
     ViewBag.Title = "Read";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Read</h2>
+<header>
+    <div class="row">
+    	<div class="large-12 columns">
+    		<article>
+    			<h1>@Model.Title</h1>
+    			<p class="excerpt">@Model.Excerpt</p>
+    		</article>
+    	</div>
+    </div>
+</header>
 

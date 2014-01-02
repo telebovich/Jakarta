@@ -11,7 +11,7 @@
 			foreach(var item in Model.MostReadItems)
 			{
 				<article class="medium-4 columns featured_post">
-					<h3>@item.Title</h3>
+					<h3>@Html.ActionLink(item.Title, "Read", new { id = item.Id }, null)</h3>
 					<img src="@Url.Content(item.Image)" alt="attent" style="width:100%;" />
 					<p>
 						@item.Copy
