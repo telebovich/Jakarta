@@ -20,7 +20,7 @@ namespace Jakarta
 
 		public List<BlogPostPreviewItem> GetAllBlogPosts()
 		{
-			return _blogPostPreviewRepository.GetAllBlogPosts ();
+			return _blogPostPreviewRepository.GetAll ();
 		}
 	}
 }

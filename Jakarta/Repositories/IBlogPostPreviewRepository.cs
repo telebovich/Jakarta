@@ -4,10 +4,10 @@ using Jakarta.Models;
 
 namespace Jakarta
 {
-	public interface IBlogPostPreviewRepository: IRepository 
+	public interface IBlogPostPreviewRepository: IRepository<BlogPostPreviewItem> 
 	{
 		BlogPostPreviewItem GetBlogPostPreview(int blogPostPreviewId);
-		List<BlogPostPreviewItem> GetAllBlogPosts();
+		List<BlogPostPreviewItem> GetAll();
 	}
 }
 

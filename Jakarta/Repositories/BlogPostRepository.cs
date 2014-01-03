@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Jakarta.Models;
 
 namespace Jakarta
@@ -14,6 +15,11 @@ namespace Jakarta
 		}
 		public BlogPostRepository ()
 		{
+		}
+
+		public List<BlogPost> GetAll()
+		{
+			throw new NotImplementedException ();
 		}
 	}
 }

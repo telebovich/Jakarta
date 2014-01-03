@@ -36,7 +36,7 @@ namespace Jakarta
 				}
 			};
 		}
-		public List<BlogPostPreviewItem> GetAllBlogPosts()
+		public List<BlogPostPreviewItem> GetAll()
 		{
 			var _previewList = new List<BlogPostPreviewItem> {
 				new BlogPostPreviewItem { Id = 1, Title = "First Post", PublishDate = DateTime.Now, 

@@ -24,5 +24,18 @@ namespace Jakarta.Tests
 			var actual = blogPostService.GetById (1);
 		}
 	}
+
+	[TestFixture]
+	public class BlogPostRepositoryTests
+	{
+		BlogPostRepository repository = new BlogPostRepository();
+
+		[Test]
+		public void ShouldReturnListOfBlogPosts()
+		{
+			var blog = repository.GetAll ();
+			Assert.IsNotNull (blog);
+		}
+	}
 }
 

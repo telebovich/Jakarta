@@ -101,6 +101,10 @@
     <Compile Include="ViewModels\BlogMainPage.cs" />
     <Compile Include="Models\BlogPostPreviewItem.cs" />
     <Compile Include="Models\AccordeonPanelItem.cs" />
+    <Compile Include="Models\PortfolioItem.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Repositories\IPortfolioRepository.cs" />
+    <Compile Include="Repositories\PortfolioRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

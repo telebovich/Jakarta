@@ -19,7 +19,7 @@ namespace Jakarta.Controllers
 			var blogPostPreviewRepositoryMock = 
 				new Mock<IBlogPostPreviewRepository> ();
 			blogPostPreviewRepositoryMock
-				.Setup (bp => bp.GetAllBlogPosts ())
+				.Setup (bp => bp.GetAll ())
 				.Returns(new List<BlogPostPreviewItem> {
 					new BlogPostPreviewItem { Id = 1, Title = "First Post", PublishDate = DateTime.Now, 
 						Copy = "This is my first post"
