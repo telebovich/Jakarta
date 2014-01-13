@@ -9,7 +9,24 @@ namespace Jakarta.Models
 		#region IRepository implementation
 		public List<PortfolioItem> GetAll ()
 		{
-			throw new NotImplementedException ();
+			var _list = new List<PortfolioItem> { 
+				new PortfolioItem {
+					Id = 1, Image = "~/Content/images/prod_thumb.png", 
+					Title = "Job Name", Description = "Lorem ipsum dolor sit amet, " +
+						"consectetur adipiscing elit. Aenean vel ligula vel felis pretium gravida..."
+				},
+				new PortfolioItem {
+					Id = 1, Image = "~/Content/images/prod_thumb.png", 
+					Title = "Job Name", Description = "Lorem ipsum dolor sit amet, " +
+						"consectetur adipiscing elit. Aenean vel ligula vel felis pretium gravida..."
+				},
+				new PortfolioItem {
+					Id = 1, Image = "~/Content/images/prod_thumb.png", 
+					Title = "Job Name", Description = "Lorem ipsum dolor sit amet, " +
+						"consectetur adipiscing elit. Aenean vel ligula vel felis pretium gravida..."
+				}
+			};
+			return _list;
 		}
 		#endregion
 	}

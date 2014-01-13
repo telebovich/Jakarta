@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Jakarta.Models;
 
 namespace Jakarta.Controllers
 {
     public class PortfolioController : Controller
     {
+		public PortfolioRepository repository = new PortfolioRepository();
+
         public ActionResult Index()
         {
-			return View ();
+			var items = repository.GetAll ();
+			return View (items);
         }
 
         public ActionResult Details(int id)

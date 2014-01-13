@@ -19,7 +19,24 @@ namespace Jakarta
 
 		public List<BlogPost> GetAll()
 		{
-			throw new NotImplementedException ();
+			var _list = new List<BlogPost> { 
+				new BlogPost { Id = 1, Title = "This is my first blog post", 
+					CreationDate = DateTime.Today, Excerpt = "Lorem ipsum dolor sit amet",
+					Content = "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+					LikesCount = 4, HeaderImageUrl = "~/"
+				},
+				new BlogPost { Id = 1, Title = "This is my second blog post", 
+					CreationDate = DateTime.Today, Excerpt = "Lorem ipsum dolor sit amet",
+					Content = "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+					LikesCount = 4, HeaderImageUrl = "~/"
+				},
+				new BlogPost { Id = 1, Title = "This is my third blog post", 
+					CreationDate = DateTime.Today, Excerpt = "Lorem ipsum dolor sit amet",
+					Content = "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+					LikesCount = 4, HeaderImageUrl = "~/"
+				}
+			};
+			return _list;
 		}
 	}
 }
