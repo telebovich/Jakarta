@@ -1,0 +1,78 @@
+﻿@model Jakarta.ViewModels.BlogMainPage
+
+@{
+	ViewBag.Title = "Blog" + " - Robert Lebovich";
+}
+
+<header>
+	<div class="row">
+		<h1>Most Read</h1>
+		@{
+			foreach(var item in Model.MostReadItems)
+			{
+				<article class="medium-4 columns featured_post">
+					<h3>@Html.ActionLink(item.Title, "Read", new { id = item.Id }, null)</h3>
+					<img src="@Url.Content(item.Image)" alt="attent" style="width:100%;" />
+					<p>
+						@item.Copy
+					</p>
+					<div class="post_meta">
+						<span class="lsf-icon" title="calendar">
+							@item.PublishDate.ToShortDateString()
+						</span>
+						<span class="lsf-icon" title="user" style="margin-left:15px;">
+							<a href="#">@item.Author</a>
+						</span>
+						<span class="lsf-icon" title="comment" style="margin-left:15px;">
+							<a href="#">@item.CommentsCount</a>
+						</span>
+					</div>
+				</article>
+			}
+		}
+	</div>
+</header>
+<section>
+	<div class="section_main">
+		<div class="row">
+			<section class="large-8 columns">
+				<h2>Latest</h2>
+				@{
+					foreach(var item in Model.LatestItems)
+					{
+						<article class="blog_post">
+							<div class="medium-3 columns">
+								<a href="#" class="th">
+									<img src="@Url.Content(item.Image)" alt="thumb" />
+								</a> 
+							</div>
+							<div class="medium-9 columns">
+								<a href="#">
+									<h3>@item.Title</h3>
+								</a>
+								<p>
+									@item.Copy
+								</p>
+							</div>
+						</article>
+					}
+				}
+			</section>
+			<section class="small-4 columns">
+				<h2>Sidebar</h2>
+				<div class="panel">
+					<h3>A place for</h3>
+					<p>
+						Usually this is a place for some kind of stupid advertisment. But I am not that 
+						kind of a guy the sells you everything and I don't have any yet. Do you have? This 
+						will be the bar for my twitter posts.
+					</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+@Html.Partial("CoolStuff");
+<script type="text/javascript">
+	$("#blog").attr("class", "active");
+</script>

@@ -1,0 +1,21 @@
+﻿@model Jakarta.Models.BlogPost
+
+@{
+    ViewBag.Title = "Read";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header>
+    <div class="row">
+    	<div class="large-12 columns">
+    		<article>
+    			<h1>@Model.Title</h1>
+    			<p class="excerpt">@Model.Excerpt</p>
+    		</article>
+    	</div>
+    </div>
+</header>
+<section class="section_light">
+	<div class="row">
+		@Model.Content
+	</div>
+</section>

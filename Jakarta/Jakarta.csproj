@@ -63,17 +63,48 @@
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.1.1311.0615\lib\net40\Moq.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Modules\CoreModule.cs" />
+    <Compile Include="Services\BlogService.cs" />
+    <Compile Include="Services\IBlogService.cs" />
+    <Compile Include="Repositories\BlogPostPreviewRepository.cs" />
+    <Compile Include="Repositories\IBlogPostPreviewRepository.cs" />
+    <Compile Include="Models\BlogPost.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\BlogPostRepository.cs" />
+    <Compile Include="Repositories\IBlogPostRepository.cs" />
+    <Compile Include="Services\IBlogPostService.cs" />
+    <Compile Include="Services\BlogPostService.cs" />
+    <Compile Include="ViewModels\BlogMainPage.cs" />
+    <Compile Include="Models\BlogPostPreviewItem.cs" />
+    <Compile Include="Models\AccordeonPanelItem.cs" />
+    <Compile Include="Models\PortfolioItem.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Repositories\IPortfolioRepository.cs" />
+    <Compile Include="Repositories\PortfolioRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -85,25 +116,14 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Content\foundation.css" />
-    <Content Include="Scripts\custom.modernizr.js" />
-    <Content Include="Scripts\foundation.abide.js" />
-    <Content Include="Scripts\foundation.alerts.js" />
-    <Content Include="Scripts\foundation.clearing.js" />
-    <Content Include="Scripts\foundation.cookie.js" />
-    <Content Include="Scripts\foundation.dropdown.js" />
-    <Content Include="Scripts\foundation.forms.js" />
-    <Content Include="Scripts\foundation.interchange.js" />
-    <Content Include="Scripts\foundation.joyride.js" />
-    <Content Include="Scripts\foundation.js" />
-    <Content Include="Scripts\foundation.magellan.js" />
-    <Content Include="Scripts\foundation.orbit.js" />
-    <Content Include="Scripts\foundation.placeholder.js" />
-    <Content Include="Scripts\foundation.reveal.js" />
-    <Content Include="Scripts\foundation.section.js" />
-    <Content Include="Scripts\foundation.tooltips.js" />
-    <Content Include="Scripts\foundation.topbar.js" />
     <Content Include="Scripts\jquery.js" />
-    <Content Include="Scripts\zepto.js" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Content\accessibility_foundicons.css" />
+    <Content Include="Content\social_foundicons.css" />
+    <Content Include="Views\Shared\CoolStuff.cshtml" />
+    <Content Include="Views\Blog\Read.cshtml" />
+    <Content Include="Views\Portfolio\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -114,4 +134,14 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <None Include="Content\fonts\accessibility_foundicons.eot" />
+    <None Include="Content\fonts\accessibility_foundicons.svg" />
+    <None Include="Content\fonts\accessibility_foundicons.ttf" />
+    <None Include="Content\fonts\accessibility_foundicons.woff" />
+    <None Include="Content\fonts\social_foundicons.eot" />
+    <None Include="Content\fonts\social_foundicons.svg" />
+    <None Include="Content\fonts\social_foundicons.ttf" />
+    <None Include="Content\fonts\social_foundicons.woff" />
+  </ItemGroup>
 </Project>
