@@ -41,5 +41,15 @@ namespace Jakarta.Controllers
 			posts = blogPostPreviewService.GetAllBlogPosts ();
 			return View ();
 		}
+
+		public ActionResult About()
+		{
+			return View ();
+		}
+
+		public ActionResult Contacts()
+		{
+			return View ();
+		}
 	}
 }
