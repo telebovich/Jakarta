@@ -49,7 +49,8 @@ namespace Jakarta.Controllers
 
 		public ActionResult Contacts()
 		{
-			return View ();
+			Contact contact = new Contact();
+			return View (contact);
 		}
 	}
 }
