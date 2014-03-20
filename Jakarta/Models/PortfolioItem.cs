@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jakarta
+namespace Jakarta.Models
 {
 	public class PortfolioItem
 	{

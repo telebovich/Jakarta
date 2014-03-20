@@ -1,37 +1,39 @@
-﻿@model List<Jakarta.PortfolioItem>
+﻿@model List<Jakarta.Models.PortfolioItem>
 
-@{
-    ViewBag.Title = "Portfolio - Robert Lebovich";
-	Layout = "~/Views/Shared/_Layout.cshtml";
-}
+    @{
+        ViewBag.Title = "Portfolio - Robert Lebovich";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 
-<header>
-	<h1 class="welcome_text">Places I have worked at</h1>
-</header>
-<section class="section_light">
-	<div class="row">
-		<div id="container">
-			@foreach (var m in Model)
-			{
-				<div class="box photo col2">
-					<a href="@Url.Action("Index", "Home")">
-						<img src="@Url.Content(m.Image)" alt="desc" />
-					</a>
-					<h4 style="text-align: center;">
-						<strong>Job Name</strong>
-					</h4>
-					<p>
-						<small>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ligula 
-							vel felis pretium gravida...
-						</small>
-					</p>
-					<p style="text-align:center">
-						<a href="#" class="button small radius">Details &raquo;</a>
-					</p>
-				</div>
-			}
-		</div>
-	</div>
-</section>
-
+    <header>
+        <h1 class="welcome_text">Places I have worked at</h1>
+    </header>
+    <section class="section_light">
+        <div class="row">
+            <div id="container">
+                @foreach (var m in Model)
+                {
+                    <div class="box photo col2">
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="@Url.Content(m.Image)" alt="desc" />
+                        </a>
+                        <h4 style="text-align: center;">
+                            <strong>Job Name</strong>
+                        </h4>
+                        <p>
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel ligula
+                                vel felis pretium gravida...
+                            </small>
+                        </p>
+                        <p style="text-align:center">
+                            <a href="#" class="button small radius">Details &raquo;</a>
+                        </p>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $("#portfolio").attr("class", "active");
+    </script>

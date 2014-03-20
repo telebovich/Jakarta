@@ -1,0 +1,38 @@
+﻿@model Jakarta.Models.Contact
+@{
+    ViewBag.Title = "Contacts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+    <h1 class="welcome_text">Contact Page</h1>
+</header>
+<section class="section_light">
+    <div class="row">
+        <div class="medium-6 columns">
+        	
+			<h3>Contact Form</h3>
+			@using (Html.BeginForm())
+			{
+				@Html.Label("Name", "Your name")
+				@Html.TextBoxFor(m => m.Name)
+				@Html.Label("Email", "Your Email (wouldn't be published)");
+				@Html.TextBoxFor(m => m.Email)
+				@Html.Label("Message", "Your message")
+				@Html.TextAreaFor(m => m.Message, new { style = "height: 200px;" })
+				<input type="submit" value="Submit" class="button success" />
+			}
+        </div>
+		<div class="medium-6 columns">
+        	<h3>Address</h3>
+        	<p>
+        		<strong>Robert Lebovich INC</strong>
+        		<p>Tel.: +972 54 435 71 O3</p>
+        		<p>Address: <br />Shderot HaMeiri 2, Jerusalem<br />Israel</p>
+        	</p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $("#contacts").attr("class", "active");
+</script>

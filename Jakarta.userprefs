@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ActiveRuntime="Mono 3.2.7 (master/32861b7)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Jakarta/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Jakarta.Tests/ViewModels/BlogMainPageTests.cs">
     <Files>
-      <File FileName="Jakarta/Views/Home/Index.cshtml" Line="11" Column="23" />
-      <File FileName="Jakarta/Views/Shared/_Layout.cshtml" Line="11" Column="85" />
+      <File FileName="Jakarta/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Jakarta/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Jakarta.Tests/ViewModels/BlogMainPageTests.cs" Line="3" Column="15" />
+      <File FileName="Jakarta/ViewModels/BlogMainPage.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
