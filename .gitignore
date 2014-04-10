@@ -1,0 +1,12 @@
+*.cache
+*.pubxml
+*.user
+TemporaryGeneratedFile_*.cs
+*_backup.*
+*.resources.dll
+UpgradeLog.htm
+*.FileListAbsolute.*
+*.pdb
+CSAutoParameterize.*
+Package
+obj
